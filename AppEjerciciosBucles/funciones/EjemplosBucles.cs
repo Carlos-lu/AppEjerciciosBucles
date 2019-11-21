@@ -21,6 +21,22 @@ namespace AppEjerciciosBucles.funciones
             return cad.ToString();
 
         }
-             
+        public static long factorial(int num)
+        {
+            int i = 1;
+            long fac = 1;
+            if(num == 1|| num == 0)
+            {
+                return 1;
+            }
+          
+            do
+            {
+                fac = fac * i;
+            } while (i < num);
+            return fac;
+
+        }
+
     }
 }
